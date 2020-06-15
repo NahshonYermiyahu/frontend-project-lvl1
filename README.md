@@ -10,7 +10,7 @@
 <hr>
 <div>
    <a href="https://asciinema.org/a/DiHG8D5U7RzSk6K4yLgaYubwL" target="_blank">
-    <img src="https://asciinema.org/a/DiHG8D5U7RzSk6K4yLgaYubwL.svg" style = "max-width: 30%" />
+    <img src="https://asciinema.org/a/DiHG8D5U7RzSk6K4yLgaYubwL.svg" width = "200" />
   </a>
 </div>
 

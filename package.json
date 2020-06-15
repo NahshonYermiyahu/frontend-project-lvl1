@@ -4,7 +4,8 @@
   "description": "project_hexlet_1",
   "main": "index.js",
   "bin": {
-    "brain-games": "bin/brain-gamesNY.js"
+    "brain-games": "bin/brain-gamesNY.js",
+    "brain-even": "bin/brain-evenNY.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

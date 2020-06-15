@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import { cli } from '../index.js';
+import { even } from '../index.js';
 
 console.log('Welcome to the Brain Games!');
 
-cli();
+even();

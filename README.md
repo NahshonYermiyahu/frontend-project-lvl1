@@ -6,8 +6,11 @@
   <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability">
     <img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" />
   </a> 
-  <a href="https://asciinema.org/a/DiHG8D5U7RzSk6K4yLgaYubwL" target="_blank">
+</p>
+<hr>
+<div>
+   <a href="https://asciinema.org/a/DiHG8D5U7RzSk6K4yLgaYubwL" target="_blank">
     <img src="https://asciinema.org/a/DiHG8D5U7RzSk6K4yLgaYubwL.svg" />
   </a>
-</p>
+</div>
 

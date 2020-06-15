@@ -9,7 +9,7 @@
 </p>
 <hr>
 <h2>
-  Setup
+  Install and usage example
 </h2>
 <div>
    <a href="https://asciinema.org/a/hNzugS14v0ghCo5wDquBL9zaN" target="_blank">

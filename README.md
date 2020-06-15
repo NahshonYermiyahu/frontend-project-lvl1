@@ -1,9 +1,12 @@
 # frontend-project-lvl1
-  [![Node CI](https://github.com/NahshonYermiyahu/frontend-project-lvl1/workflows/Node%20CI/badge.svg)](https://github.com/NahshonYermiyahu/frontend-project-lvl1/actions)
- 
+<p>
+  <a href="https://github.com/NahshonYermiyahu/frontend-project-lvl1/actions">
+    <img src="https://github.com/NahshonYermiyahu/frontend-project-lvl1/workflows/Node%20CI/badge.svg">
+  </a>
   <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability">
     <img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" />
   </a> 
+</p>
 <hr>
 <div>
    <a href="https://asciinema.org/a/hNzugS14v0ghCo5wDquBL9zaN" target="_blank">

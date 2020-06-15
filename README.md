@@ -9,8 +9,8 @@
 </p>
 <hr>
 <div>
-   <a href="https://asciinema.org/a/DiHG8D5U7RzSk6K4yLgaYubwL" target="_blank">
-    <img src="https://asciinema.org/a/DiHG8D5U7RzSk6K4yLgaYubwL.svg" width = "200" />
+   <a href="https://asciinema.org/a/hNzugS14v0ghCo5wDquBL9zaN" target="_blank">
+     <img src="https://asciinema.org/a/hNzugS14v0ghCo5wDquBL9zaN.svg" width ="200/>
   </a>
 </div>
 

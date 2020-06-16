@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import { calc } from '../index.js';
+import { calc, cli } from '../index.js';
 
-console.log('Welcome to the Brain Games!');
-
-calc();
+cli(calc);

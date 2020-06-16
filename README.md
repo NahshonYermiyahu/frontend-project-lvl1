@@ -26,5 +26,14 @@
     <img src="https://asciinema.org/a/4KqTXRKVRd4yC1pF48W5dNV7b.svg" width = "200"/>
   </a>
 </div>
+<hr>
+<h2>
+  Install and usage example brain-gcd
+</h2>
+<div>
+  <a href="https://asciinema.org/a/w8bkdJhGYWSku0a1yo0QLO2Wo" target="_blank">
+    <img src="https://asciinema.org/a/w8bkdJhGYWSku0a1yo0QLO2Wo.svg" width = "200"/>
+  </a>
+</div>
 
 

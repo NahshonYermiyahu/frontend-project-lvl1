@@ -9,11 +9,22 @@
 </p>
 <hr>
 <h2>
-  Install and usage example
+  Install and usage example brain-even
 </h2>
 <div>
    <a href="https://asciinema.org/a/hNzugS14v0ghCo5wDquBL9zaN" target="_blank">
      <img src="https://asciinema.org/a/hNzugS14v0ghCo5wDquBL9zaN.svg" width ="200"/>
   </a>
 </div>
+</p>
+<hr>
+<h2>
+  Install and usage example brain-calc
+</h2>
+<div>
+   <a href="https://asciinema.org/a/p69Oei7co5Q8DHSXQuvDNFHgr" target="_blank">
+     <img src="https://asciinema.org/a/p69Oei7co5Q8DHSXQuvDNFHgr.svg" width ="200"/>
+  </a>
+</div>
+
 

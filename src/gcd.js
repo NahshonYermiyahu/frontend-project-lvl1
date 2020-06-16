@@ -1,8 +1,8 @@
 import check from './check.js';
 
 function getQuestion() {
-  const firstNum = Math.ceil(Math.random() * 10);
-  const secondNum = Math.ceil(Math.random() * 10);
+  const firstNum = Math.ceil(Math.random() * 100);
+  const secondNum = Math.ceil(Math.random() * 100);
   const result = [];
   const length = firstNum < secondNum ? firstNum : secondNum;
   let divisorMax = 0;

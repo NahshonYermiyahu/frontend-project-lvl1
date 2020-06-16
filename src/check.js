@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync';
 
+// receiving data and checking and outputting the result
 export default (array) => {
   console.log(`Question: ${array[1]}`);
   const answer = readlineSync.question('Your answer:');

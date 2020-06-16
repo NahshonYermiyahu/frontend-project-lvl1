@@ -6,7 +6,8 @@
   "bin": {
     "brain-games": "bin/brain-gamesNY.js",
     "brain-even": "bin/brain-evenNY.js",
-    "brain-calc": "bin/brain-calcNY.js"
+    "brain-calc": "bin/brain-calcNY.js",
+    "brain-gcd": "bin/brain-gcdNY.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

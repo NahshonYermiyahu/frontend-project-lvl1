@@ -1,8 +1,8 @@
 import readlineSync from 'readline-sync';
 
 export default () => {
-  let result = false;
   console.log('Answer "yes" if the number is even, otherwise answer "no"');
+  let result = false;
 
   for (let i = 0; i < 3; i += 1) {
     const question = Math.ceil(Math.random() * 100);

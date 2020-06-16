@@ -1,4 +1,4 @@
-import readlineSync from 'readline-sync';
+import check from './check.js';
 
 function getQuestion() {
   const firstNum = Math.ceil(Math.random() * 100);
@@ -31,18 +31,13 @@ function getQuestion() {
 }
 
 export default () => {
-  let result = false;
   console.log('What is the result of the expression?');
+  let result = false;
 
   for (let i = 0; i < 3; i += 1) {
     const resultGetQuestion = getQuestion();
-    console.log(`Question: ${resultGetQuestion[1]}`);
-    const answer = readlineSync.question('Your answer:');
 
-    if (+answer === resultGetQuestion[0]) {
-      console.log('Correct!');
-    } else {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${resultGetQuestion[0]}.`);
+    if (!check(resultGetQuestion)) {
       break;
     }
 

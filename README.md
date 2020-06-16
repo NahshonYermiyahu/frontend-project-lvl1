@@ -13,7 +13,7 @@
 </h2>
 <div>
    <a href="https://asciinema.org/a/hNzugS14v0ghCo5wDquBL9zaN" target="_blank">
-     <img src="https://asciinema.org/a/hNzugS14v0ghCo5wDquBL9zaN.svg" width ="200"/>
+     <img src="https://asciinema.org/a/hNzugS14v0ghCo5wDquBL9zaN.svg" width = "200"/>
   </a>
 </div>
 </p>
@@ -22,8 +22,8 @@
   Install and usage example brain-calc
 </h2>
 <div>
-   <a href="https://asciinema.org/a/p69Oei7co5Q8DHSXQuvDNFHgr" target="_blank">
-     <img src="https://asciinema.org/a/p69Oei7co5Q8DHSXQuvDNFHgr.svg" width ="200"/>
+  <a href="https://asciinema.org/a/4KqTXRKVRd4yC1pF48W5dNV7b" target="_blank">
+    <img src="https://asciinema.org/a/4KqTXRKVRd4yC1pF48W5dNV7b.svg" width = "200"/>
   </a>
 </div>
 

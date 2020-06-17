@@ -1,24 +1,24 @@
-import loopCheck from '../loopСheck.js';
+import main from './main.js';
 
-function getQuestion() {
+function getData() {
   // create a number to check
-  const numberToCheck = Math.ceil(Math.random() * 100);
+  const num = Math.ceil(Math.random() * 100);
   const result = [];
-  let numberCheck = 'yes';
+  let checkNum = 'yes';
 
   // number check
-  for (let i = 2; i < numberToCheck; i += 1) {
-    if (numberToCheck <= 1 || numberToCheck % i === 0) {
-      numberCheck = 'no';
+  for (let i = 2; i < num; i += 1) {
+    if (num <= 1 || num % i === 0) {
+      checkNum = 'no';
     }
   }
 
-  result.push(numberCheck);
-  result.push(numberToCheck);
+  result.push(checkNum);
+  result.push(num);
   return result;
 }
 
 export default () => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-  return loopCheck(getQuestion);
+  return main(getData);
 };

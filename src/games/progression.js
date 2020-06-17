@@ -1,36 +1,36 @@
-import loopCheck from '../loopСheck.js';
+import main from './main.js';
 
-function getQuestion() {
-  const firstNumber = Math.ceil(Math.random() * 10);
+function getData() {
+  const num1 = Math.ceil(Math.random() * 10);
   const step = Math.ceil(Math.random() * 10);
   const hiddenItemPosition = Math.ceil(Math.random() * 10) - 1;
-  const seriesNumbers = [firstNumber];
-  let seriesNumbersResult = '';
+  const numbers = [num1];
+  let stringNumbers = '';
   const result = [];
 
   // creating an array of numbers forming an arithmetic progression
   for (let i = 0; i < 9; i += 1) {
-    seriesNumbers.push((seriesNumbers[i] + step));
+    numbers.push((numbers[i] + step));
   }
 
   // getting a hidden item to check
-  const hiddenItem = seriesNumbers[hiddenItemPosition];
+  const hiddenItem = numbers[hiddenItemPosition];
 
   // creating a string of numbers forming an arithmetic progression for a question
-  for (let i = 0; i < seriesNumbers.length; i += 1) {
+  for (let i = 0; i < stringNumbers.length; i += 1) {
     if (i === hiddenItemPosition) {
-      seriesNumbersResult += '.. ';
+      stringNumbers += '.. ';
     } else {
-      seriesNumbersResult += seriesNumbers[i].toString();
-      seriesNumbersResult += ' ';
+      stringNumbers += numbers[i].toString();
+      stringNumbers += ' ';
     }
   }
 
   result.push(hiddenItem);
-  result.push(seriesNumbersResult);
+  result.push(stringNumbers);
   return result;
 }
 export default () => {
   console.log('What number is missing in the progression?');
-  return loopCheck(getQuestion);
+  return main(getData);
 };

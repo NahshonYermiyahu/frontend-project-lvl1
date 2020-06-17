@@ -1,22 +1,22 @@
-import loopCheck from '../loopСheck.js';
+import main from './main.js';
 
-function getQuestion() {
+function getData() {
   // create a number to check
-  const numberToCheck = Math.ceil(Math.random() * 100);
+  const num = Math.ceil(Math.random() * 100);
   const result = [];
-  let numberCheck = 'no';
+  let checkNum = 'no';
 
   // number check
-  if (numberToCheck % 2 === 0) {
-    numberCheck = 'yes';
+  if (num % 2 === 0) {
+    checkNum = 'yes';
   }
 
-  result.push(numberCheck);
-  result.push(numberToCheck);
+  result.push(checkNum);
+  result.push(num);
   return result;
 }
 
 export default () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no"');
-  return loopCheck(getQuestion);
+  return main(getData);
 };

@@ -1,9 +1,9 @@
-import loopCheck from '../loopСheck.js';
+import main from './main.js';
 
-function getQuestion() {
+function getData() {
   // getting numbers for a question
-  const firstNum = Math.ceil(Math.random() * 100);
-  const secondNum = Math.ceil(Math.random() * 100);
+  const num1 = Math.ceil(Math.random() * 100);
+  const num2 = Math.ceil(Math.random() * 100);
   let operator = '';
   let total = 0;
   const result = [];
@@ -15,26 +15,26 @@ function getQuestion() {
   switch (expr) {
     case 0:
       operator = '+';
-      total = firstNum + secondNum;
+      total = num1 + num2;
       break;
     case 1:
       operator = '-';
-      total = firstNum - secondNum;
+      total = num1 - num2;
       break;
     case 2:
       operator = '*';
-      total = firstNum * secondNum;
+      total = num1 * num2;
       break;
     default:
       operator = '+';
-      total = firstNum + secondNum;
+      total = num1 + num2;
   }
   result.push(total);
-  result.push(`${firstNum} ${operator} ${secondNum}`);
+  result.push(`${num1} ${operator} ${num2}`);
   return result;
 }
 
 export default () => {
   console.log('What is the result of the expression?');
-  return loopCheck(getQuestion);
+  return main(getData);
 };

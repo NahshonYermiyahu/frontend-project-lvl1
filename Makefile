@@ -21,3 +21,6 @@ brain-gcd:
 
 brain-progression:
 	node bin/brain-progressionNY.js
+
+brain-prime:
+	node bin/brain-primeNY.js

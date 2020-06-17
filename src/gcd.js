@@ -1,4 +1,4 @@
-import check from './check.js';
+import loopCheck from './loopСheck.js';
 
 function getQuestion() {
   // getting numbers for a question
@@ -21,16 +21,5 @@ function getQuestion() {
 
 export default () => {
   console.log('Find the greatest common divisor of given numbers.');
-  let result = true;
-
-  // transmission of the question and verification of the answer
-  for (let i = 0; i < 3; i += 1) {
-    const resultGetQuestion = getQuestion();
-
-    if (!check(resultGetQuestion)) {
-      result = false;
-      break;
-    }
-  }
-  return result;
+  return loopCheck(getQuestion);
 };

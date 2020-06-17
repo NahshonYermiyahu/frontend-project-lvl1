@@ -1,4 +1,4 @@
-import check from './check.js';
+import loopCheck from './loopСheck.js';
 
 function getQuestion() {
   const firstNumber = Math.ceil(Math.random() * 10);
@@ -32,16 +32,5 @@ function getQuestion() {
 }
 export default () => {
   console.log('What number is missing in the progression?');
-  let result = true;
-
-  // transmission of the question and verification of the answer
-  for (let i = 0; i < 3; i += 1) {
-    const resultGetQuestion = getQuestion();
-
-    if (!check(resultGetQuestion)) {
-      result = false;
-      break;
-    }
-  }
-  return result;
+  return loopCheck(getQuestion);
 };

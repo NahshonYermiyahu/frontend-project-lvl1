@@ -4,10 +4,12 @@ function getQuestion() {
   // create a number to check
   const numberToCheck = Math.ceil(Math.random() * 100);
   const result = [];
-  let numberCheck = 'no';
+  let numberCheck = 'yes';
 
-  if (numberToCheck % 2 === 0) {
-    numberCheck = 'yes';
+  for (let i = 2; i < numberToCheck; i += 1) {
+    if (numberToCheck <= 1 || numberToCheck % i === 0) {
+      numberCheck = 'no';
+    }
   }
 
   result.push(numberCheck);
@@ -16,6 +18,6 @@ function getQuestion() {
 }
 
 export default () => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no"');
+  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   return loopCheck(getQuestion);
 };

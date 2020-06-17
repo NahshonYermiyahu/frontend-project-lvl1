@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { calc, cli } from '../index.js';
+import { calc } from '../index.js';
 
-cli(calc);
+calc();

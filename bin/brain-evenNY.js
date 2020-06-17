@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { even, cli } from '../index.js';
+import { even } from '../index.js';
 
-cli(even);
+even();

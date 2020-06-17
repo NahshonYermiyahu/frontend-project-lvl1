@@ -1,4 +1,4 @@
-import loopCheck from './loopСheck.js';
+import loopCheck from '../loopСheck.js';
 
 function getQuestion() {
   // create a number to check
@@ -6,6 +6,7 @@ function getQuestion() {
   const result = [];
   let numberCheck = 'yes';
 
+  // number check
   for (let i = 2; i < numberToCheck; i += 1) {
     if (numberToCheck <= 1 || numberToCheck % i === 0) {
       numberCheck = 'no';

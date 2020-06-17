@@ -1,4 +1,4 @@
-import loopCheck from './loopСheck.js';
+import loopCheck from '../loopСheck.js';
 
 function getQuestion() {
   // getting numbers for a question

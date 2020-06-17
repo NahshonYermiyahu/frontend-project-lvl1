@@ -1,4 +1,4 @@
-import loopCheck from './loopСheck.js';
+import loopCheck from '../loopСheck.js';
 
 function getQuestion() {
   const firstNumber = Math.ceil(Math.random() * 10);

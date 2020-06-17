@@ -15,7 +15,11 @@ function check(array) {
   }
   return result;
 }
+
 export default (getQuestion) => {
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello ${userName}!`);
   let result = true;
 
   // transmission of the question and verification of the answer
@@ -27,5 +31,10 @@ export default (getQuestion) => {
       break;
     }
   }
-  return result;
+
+  if (result) {
+    console.log(`Congratulations, ${userName}!`);
+  } else {
+    console.log(`Let's try again, ${userName}!`);
+  }
 };

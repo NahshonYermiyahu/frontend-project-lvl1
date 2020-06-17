@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { gcd, cli } from '../index.js';
+import { gcd } from '../index.js';
 
-cli(gcd);
+gcd();

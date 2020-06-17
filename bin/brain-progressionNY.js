@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { progression, cli } from '../index.js';
+import { progression } from '../index.js';
 
-cli(progression);
+progression();

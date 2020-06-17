@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { cli, prime } from '../index.js';
+import { prime } from '../index.js';
 
-cli(prime);
+prime();

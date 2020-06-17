@@ -44,5 +44,13 @@
     <img src="https://asciinema.org/a/BiXej609xc9bNRPF9X7O7sdxf.svg" width = "200"/>
   </a>
 </div>
+<h2>
+  Install and usage example brain-prime
+</h2>
+<div>
+  <a href="https://asciinema.org/a/GDT76qi52EKKyzS6a9utseOpV" target="_blank">
+    <img src="https://asciinema.org/a/GDT76qi52EKKyzS6a9utseOpV.svg" width = "200"/>
+  </a>
+</div>
 
 

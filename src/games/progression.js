@@ -3,7 +3,7 @@ import main from './main.js';
 function getData() {
   const num1 = Math.ceil(Math.random() * 10);
   const step = Math.ceil(Math.random() * 10);
-  const hiddenItemPosition = Math.ceil(Math.random() * 10) - 1;
+  const hiddenItemPos = Math.ceil(Math.random() * 10) - 1;
   const numbers = [num1];
   let stringNumbers = '';
   const result = [];
@@ -14,11 +14,11 @@ function getData() {
   }
 
   // getting a hidden item to check
-  const hiddenItem = numbers[hiddenItemPosition];
+  const hiddenItem = numbers[hiddenItemPos];
 
   // creating a string of numbers forming an arithmetic progression for a question
   for (let i = 0; i < numbers.length; i += 1) {
-    if (i === hiddenItemPosition) {
+    if (i === hiddenItemPos) {
       stringNumbers += '.. ';
     } else {
       stringNumbers += numbers[i].toString();

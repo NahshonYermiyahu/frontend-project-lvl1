@@ -17,7 +17,7 @@ function getData() {
   const hiddenItem = numbers[hiddenItemPosition];
 
   // creating a string of numbers forming an arithmetic progression for a question
-  for (let i = 0; i < stringNumbers.length; i += 1) {
+  for (let i = 0; i < numbers.length; i += 1) {
     if (i === hiddenItemPosition) {
       stringNumbers += '.. ';
     } else {

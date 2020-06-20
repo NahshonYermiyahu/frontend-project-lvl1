@@ -1,12 +1,11 @@
-import main from './main.js';
+import main from '../main.js';
+import randomNumber from '../utils.js'
 
-function getData() {
-  // getting numbers for a question
-  const num1 = Math.ceil(Math.random() * 100);
-  const num2 = Math.ceil(Math.random() * 100);
-  let operator = '';
-  let total = 0;
-  const result = [];
+const getData = () => {
+  const numForQuestion1 = randomNumber(100);
+  const numForQuestion2 = randomNumber(100);
+  let operatorForQuestion = '';
+  let answer = 0;
 
   // getting an operator for a question and
   // calculating the result of an operation for checking
@@ -14,27 +13,26 @@ function getData() {
 
   switch (expr) {
     case 0:
-      operator = '+';
-      total = num1 + num2;
+      operatorForQuestion = '+';
+      answer = numForQuestion1 + numForQuestion2;
       break;
     case 1:
-      operator = '-';
-      total = num1 - num2;
+      operatorForQuestion = '-';
+      answer = numForQuestion1 - numForQuestion2;
       break;
     case 2:
-      operator = '*';
-      total = num1 * num2;
+      operatorForQuestion = '*';
+      answer = numForQuestion1 * numForQuestion2;
       break;
     default:
-      operator = '+';
-      total = num1 + num2;
+      operatorForQuestion = '+';
+      answer = numForQuestion1 + numForQuestion2;
   }
-  result.push(total);
-  result.push(`${num1} ${operator} ${num2}`);
-  return result;
-}
+
+  return [answer, `${numForQuestion1} ${operatorForQuestion} ${numForQuestion2}`];
+};
 
 export default () => {
-  console.log('What is the result of the expression?');
-  return main(getData);
+  const question = 'What is the result of the expression?';
+  main(getData, question);
 };

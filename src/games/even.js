@@ -1,22 +1,13 @@
-import main from './main.js';
+import main from '../main.js';
+import randomNumber from '../utils.js'
 
-function getData() {
-  // create a number to check
-  const num = Math.ceil(Math.random() * 100);
-  const result = [];
-  let checkNum = 'no';
-
-  // number check
-  if (num % 2 === 0) {
-    checkNum = 'yes';
-  }
-
-  result.push(checkNum);
-  result.push(num);
-  return result;
-}
+const getData = () => {
+  const numForTask = randomNumber(100);
+  const answer = numForTask % 2 === 0 ? 'yes' : 'no';
+  return [answer, numForTask];
+};
 
 export default () => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no"');
-  return main(getData);
+  const task = 'Answer "yes" if the number is even, otherwise answer "no"';
+  main(getData, task);
 };

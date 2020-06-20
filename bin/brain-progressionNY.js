@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { progression } from '../index.js';
+import runIdentifyFlaw from '../src/games/progression.js';
 
-progression();
+runIdentifyFlaw();

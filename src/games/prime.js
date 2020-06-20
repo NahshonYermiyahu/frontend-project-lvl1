@@ -1,24 +1,19 @@
-import main from './main.js';
+import main from '../main.js';
+import randomNumber from '../utils.js'
 
-function getData() {
-  // create a number to check
-  const num = Math.ceil(Math.random() * 100);
-  const result = [];
-  let checkNum = 'yes';
+const getData = () => {
+  const numForTask = randomNumber(100);
+  let answer = 'yes';
 
-  // number check
-  for (let i = 2; i < num; i += 1) {
-    if (num <= 1 || num % i === 0) {
-      checkNum = 'no';
-    }
+  // check prime number
+  for (let i = 2; i < numForTask; i += 1) {
+    if (numForTask <= 1 || numForTask % i === 0) {answer = 'no'}
   }
 
-  result.push(checkNum);
-  result.push(num);
-  return result;
-}
+  return [answer, numForTask];
+};
 
 export default () => {
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-  return main(getData);
+  const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+  main(getData, task);
 };

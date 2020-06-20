@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { gcd } from '../index.js';
+import runSearchDivider from '../src/games/gcd.js';
 
-gcd();
+runSearchDivider();

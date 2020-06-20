@@ -1,36 +1,35 @@
-import main from './main.js';
+import main from '../main.js';
+import randomNumber from '../utils.js'
 
-function getData() {
-  const num1 = Math.ceil(Math.random() * 10);
+const getData = () => {
   const step = Math.ceil(Math.random() * 10);
   const hiddenItemPos = Math.ceil(Math.random() * 10) - 1;
-  const numbers = [num1];
-  let stringNumbers = '';
-  const result = [];
+  const progression = [randomNumber(10)];
+  let questionLine = '';
 
-  // creating an array of numbers forming an arithmetic progression
+  // creating an array of numbers forming an
+  // arithmetic progression
   for (let i = 0; i < 9; i += 1) {
-    numbers.push((numbers[i] + step));
+    progression.push((progression[i] + step));
   }
 
   // getting a hidden item to check
-  const hiddenItem = numbers[hiddenItemPos];
+  const answer = progression[hiddenItemPos];
 
-  // creating a string of numbers forming an arithmetic progression for a question
-  for (let i = 0; i < numbers.length; i += 1) {
+  // creating a string of numbers forming an
+  // arithmetic progression for a question
+  for (let i = 0; i < progression.length; i += 1) {
     if (i === hiddenItemPos) {
-      stringNumbers += '.. ';
+      questionLine += '.. ';
     } else {
-      stringNumbers += numbers[i].toString();
-      stringNumbers += ' ';
+      questionLine += progression[i].toString();
+      questionLine += ' ';
     }
   }
 
-  result.push(hiddenItem);
-  result.push(stringNumbers);
-  return result;
-}
+  return [answer, questionLine];
+};
 export default () => {
-  console.log('What number is missing in the progression?');
-  return main(getData);
+  const question = 'What number is missing in the progression?';
+  main(getData, question);
 };

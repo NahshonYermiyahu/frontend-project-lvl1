@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-function check(data) {
+const check = (data) => {
   console.log(`Question: ${data[1]}`);
   const answer = readlineSync.question('Your answer:');
   let result = false;
@@ -14,12 +14,13 @@ function check(data) {
       + `${answer} is wrong answer ;(. Correct answer was ${data[0]}.`);
   }
   return result;
-}
+};
 
-export default (getData) => {
+export default (getData, task) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello ${userName}!`);
+  console.log(task);
   let result = true;
 
   // transmission of the question and verification of the answer

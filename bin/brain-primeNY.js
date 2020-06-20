@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { prime } from '../index.js';
+import runCheckPrimeNumber from '../src/games/prime.js';
 
-prime();
+runCheckPrimeNumber();

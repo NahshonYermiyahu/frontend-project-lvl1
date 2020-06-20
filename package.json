@@ -32,5 +32,13 @@
     "eslint": "^7.2.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.21.2"
-  }
+  },
+  "keywords": [
+    "command line game",
+    "command line game calculation",
+    "command line game progression ",
+    "command line game primes",
+    "command line game greatest common factor",
+    "command line game parity"
+  ]
 }

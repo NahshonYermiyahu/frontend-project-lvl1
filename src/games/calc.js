@@ -1,5 +1,5 @@
 import main from '../main.js';
-import randomNumber from '../utils.js'
+import randomNumber from '../utils.js';
 
 const getData = () => {
   const numForQuestion1 = randomNumber(100);

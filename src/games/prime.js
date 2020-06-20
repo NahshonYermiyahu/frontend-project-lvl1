@@ -1,5 +1,5 @@
 import main from '../main.js';
-import randomNumber from '../utils.js'
+import randomNumber from '../utils.js';
 
 const getData = () => {
   const numForTask = randomNumber(100);
@@ -7,7 +7,9 @@ const getData = () => {
 
   // check prime number
   for (let i = 2; i < numForTask; i += 1) {
-    if (numForTask <= 1 || numForTask % i === 0) {answer = 'no'}
+    if (numForTask <= 1 || numForTask % i === 0) {
+      answer = 'no';
+    }
   }
 
   return [answer, numForTask];

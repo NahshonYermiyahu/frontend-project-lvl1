@@ -1,3 +1,1 @@
-export default (rate) => {
-  return Math.ceil(Math.random() * rate)
-}
+export default (rate) => Math.ceil(Math.random() * rate);

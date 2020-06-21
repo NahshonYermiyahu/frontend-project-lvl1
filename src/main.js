@@ -21,19 +21,19 @@ export default (getData, task) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello ${userName}!`);
   console.log(task);
-  let result = true;
+  let resultCheck = true;
 
   // transmission of the question and verification of the answer
   for (let i = 0; i < 3; i += 1) {
     const data = getData();
 
     if (!check(data)) {
-      result = false;
+      resultCheck = false;
       break;
     }
   }
 
-  if (result) {
+  if (resultCheck) {
     console.log(`Congratulations, ${userName}!`);
   } else {
     console.log(`Let's try again, ${userName}!`);

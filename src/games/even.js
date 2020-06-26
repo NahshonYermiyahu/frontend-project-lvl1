@@ -1,16 +1,16 @@
 import playGame from '../index.js';
 import randomNumber from '../utils.js';
 
-const question = 'Answer "yes" if the number is even, otherwise answer "no"';
+const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no"';
 
 const parityCheck = (number) => number % 2 === 0;
 
 const getData = () => {
-  const numberQuestion = randomNumber(1, 100);
-  const correctAnswer = parityCheck(numberQuestion) ? 'yes' : 'no';
-  return [numberQuestion, correctAnswer];
+  const question = randomNumber(1, 100);
+  const correctAnswer = parityCheck(question) ? 'yes' : 'no';
+  return [question, correctAnswer];
 };
 
 export default () => {
-  playGame(question, getData);
+  playGame(gameDescription, getData);
 };

@@ -1,9 +1,9 @@
 import playGame from '../index.js';
 import randomNumber from '../utils.js';
 
-const question = 'What number is missing in the progression?';
+const gameDescription = 'What number is missing in the progression?';
 
-function getQuestionLine(array, index) {
+const getString = (array, index) => {
   let result = '';
 
   for (let i = 0; i < array.length; i += 1) {
@@ -16,7 +16,7 @@ function getQuestionLine(array, index) {
   }
 
   return result;
-}
+};
 
 const getData = () => {
   const step = randomNumber(1, 10);
@@ -35,10 +35,10 @@ const getData = () => {
   // creating a string of numbers forming an
   // arithmetic progression for a question
 
-  const questionLine = getQuestionLine(progression, hiddenItemPos);
+  const task = getString(progression, hiddenItemPos);
 
-  return [questionLine, correctAnswer];
+  return [task, correctAnswer.toString()];
 };
 export default () => {
-  playGame(question, getData);
+  playGame(gameDescription, getData);
 };

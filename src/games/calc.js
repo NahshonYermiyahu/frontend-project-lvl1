@@ -1,41 +1,35 @@
 import playGame from '../index.js';
 import randomNumber from '../utils.js';
 
-const question = 'What is the result of the expression?';
+const gameDescription = 'What is the result of the expression?';
+const operators = ['+', '-', '*'];
 
-function getCorrectAnswer(operator, number1, number2) {
-  let result = 0;
+const calculate = (operator, number1, number2) => {
   switch (operator) {
     case '+':
-      result = number1 + number2;
-      break;
+      return number1 + number2;
     case '-':
-      result = number1 - number2;
-      break;
+      return number1 - number2;
     case '*':
-      result = number1 * number2;
-      break;
+      return number1 * number2;
     default:
-      console.log('Expression operator not defined.Try again.');
+      throw new Error(`Unknown order state: '${operator}'!`);
   }
-
-  return result;
-}
+};
 
 const getData = () => {
-  const question1 = randomNumber(1, 100);
-  const question2 = randomNumber(1, 100);
-  const questionOperators = ['+', '-', '*'];
+  const number1 = randomNumber(1, 100);
+  const number2 = randomNumber(1, 100);
 
   // getting an operator for a question and
   // calculating the result of an operation for checking
-  const index = randomNumber(0, questionOperators.length - 1);
-  const correctAnswer = getCorrectAnswer(questionOperators[index], question1, question2);
-  const questionExpression = `${question1} ${questionOperators[index]} ${question2}`;
+  const index = randomNumber(0, operators.length - 1);
+  const correctAnswer = calculate(operators[index], number1, number2);
+  const task = `${number1} ${operators[index]} ${number2}`;
 
-  return [questionExpression, correctAnswer];
+  return [task, correctAnswer.toString()];
 };
 
 export default () => {
-  playGame(question, getData);
+  playGame(gameDescription, getData);
 };

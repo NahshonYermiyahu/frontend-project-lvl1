@@ -3,7 +3,7 @@
   <a href="https://github.com/NahshonYermiyahu/frontend-project-lvl1/actions">
     <img src="https://github.com/NahshonYermiyahu/frontend-project-lvl1/workflows/Node%20CI/badge.svg">
   </a>
-  <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability">
+  <a href="https://codeclimate.com/github/NahshonYermiyahu/frontend-project-lvl1">
     <img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" />
   </a> 
 </p>

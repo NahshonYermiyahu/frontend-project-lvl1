@@ -4,16 +4,16 @@ import randomNumber from '../utils.js';
 const gameDescription = 'Find the greatest common divisor of given numbers.';
 
 const getMaxDivisor = (number1, number2) => {
-  let result = 0;
-  const sizeMin = number1 < number2 ? number1 : number2;
+  let maxDivisor;
+  const min = Math.min(number1, number2);
 
-  for (let i = 1; i < sizeMin + 1; i += 1) {
+  for (let i = 1; i < min + 1; i += 1) {
     if (Number.isInteger(number1 / i) && Number.isInteger(number2 / i)) {
-      result = i > result ? i : result;
+      maxDivisor = i;
     }
   }
 
-  return result;
+  return maxDivisor;
 };
 
 const getData = () => {

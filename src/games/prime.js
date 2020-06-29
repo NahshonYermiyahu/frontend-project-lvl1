@@ -16,7 +16,7 @@ const checkPrimeNumber = (number) => {
 const getData = () => {
   const question = randomNumber(1, 100);
   const correctAnswer = checkPrimeNumber(question) ? 'yes' : 'no';
-  return [question, correctAnswer];
+  return [question.toString(), correctAnswer];
 };
 
 export default () => {

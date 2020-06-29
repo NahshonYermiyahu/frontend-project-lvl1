@@ -8,7 +8,7 @@ const parityCheck = (number) => number % 2 === 0;
 const getData = () => {
   const question = randomNumber(1, 100);
   const correctAnswer = parityCheck(question) ? 'yes' : 'no';
-  return [question, correctAnswer];
+  return [question.toString(), correctAnswer];
 };
 
 export default () => {

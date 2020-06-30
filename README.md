@@ -12,9 +12,7 @@
   Install and usage example brain-even
 </h3>
 <div>
-   <a href="https://asciinema.org/a/hNzugS14v0ghCo5wDquBL9zaN" target="_blank">
-     <img src="https://asciinema.org/a/hNzugS14v0ghCo5wDquBL9zaN.svg" width = "70"/>
-  </a>
+   <script id="asciicast-GEwzRAsmz6UUU5L5MuDnGD8vi" src="https://asciinema.org/a/GEwzRAsmz6UUU5L5MuDnGD8vi.js" async></script>
 <div>
 <h3>
   Install and usage example brain-calc
